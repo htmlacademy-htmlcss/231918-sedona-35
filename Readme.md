@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Damian Sosov](https://up.htmlacademy.ru/htmlcss/35/user/231918).
-* Наставник: `Максим Ворожцов`.
+* Наставник: [Максим Ворожцов](https://htmlacademy.ru/profile/id485797).
 
 ---
 
