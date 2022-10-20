@@ -3,34 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body>
-    <header class="page-header">
-      <a href="https://htmlacademy.ru">
-        <img  src="/images/logo.png" width="140px" height="70.05px" alt="sedona-logo" class="page-header-logo">
-      </a>
+    <header class="container-header">
+      <div class="logo-containner">
+        <img  src="/images/logo.png" width="140px" height="70px" alt="sedona-logo" class="page-header-logo">
+      </div>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="aboutsedona.html">О Cедоне</a>
+            <a class="navigation-link" href="about-sedona.html">О Cедоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          <li class="navigation-user-list-item search">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное 12</span></a>
+          <li class="navigation-user-list-item favorites">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Избранное
+              </span>
+            </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+          <li class="navigation-user-list-item order">
+            <a class="navigation-link button order-button" href="#">Хочу сюда&excl;</a>
           </li>
         </ul>
       </nav>
@@ -89,7 +98,7 @@
         </form>
       </section>
 
-      <section class="sorting">
+      <section class="sorting-container">
         <h2>Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
@@ -101,8 +110,8 @@
         </select>
       </section>
 
-      <section class="Amara">
-        <ul class="hotel-list">
+      <section class="hotel-card">
+        <ul class="hotel-card-list">
           <li class="hotel-Amara">
             <a class="hotel-Amara-link" href="hotel.html">
               <img class="hotel-Amara-image" src="/images/cdb24cb3fa93b8ee9a4fc5b093c48122.jpg" width="300px" height="212px" alt="Amara Resort & Spa">
@@ -157,7 +166,7 @@
         </ul>
       </section>
 
-      <section class="pagination">
+      <section class="pagination-list">
         <h2 class="visually-hidden">Переход между страницами</h2>
         <ul class="pagination-number">
           <li class="pagination-item">
@@ -181,12 +190,12 @@
         </ul>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe-title">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://htmlacademy.ru/" class="subscribe-form" method="post">
-          <input type="email" class="field" placeholder="Ваш e-mail" name="subscribe-email" required>
-          <button class="subscribe-button" type="submit">Подписаться</button>
+        <form action="https://htmlacademy.ru/" class="subscribe-title-form" method="post">
+          <input type="email" class="field" placeholder="Ваш e-mail" name="subscribe-title-email" required>
+          <button class="subscribe-title-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -204,7 +213,7 @@
         </li>
       </ul>
 
-        <a href="tel:+78128121212" class="footer-contacts-address-phone">+7 (812) 812-12-12</a>
+        <a href="tel:+78128121212" class="footer-contacts-phone">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru" class="htmlacademy-link">html-academy</a>
   </footer>
 
