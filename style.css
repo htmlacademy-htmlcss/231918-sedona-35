@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  src: url("./fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  src: url("./fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -211,6 +211,7 @@ body {
   display: block;
   margin: 0 auto;
   padding-top: 51px;
+  background-position: center calc(100% + 2px), center;
 }
 
 .introduction {
@@ -429,7 +430,7 @@ li:not(:first-child):not(:last-child) .advantages-title::before {
 .subscription-part {
   box-sizing: border-box;
   text-align: center;
-  background-image: url(/231918-sedona-35/images/Subscribe\ \(1\).png);
+  background-image: url(/231918-sedona-35/images/Subscribe.png);
   background-size: 1200px auto;
   margin: 0 auto;
   color: #FFFFFF;
@@ -948,9 +949,20 @@ span.information {
   margin-right: 4.5px;
 }
 
+.breadcrumbs-item {
+ position: relative;
+ margin-right: 20px;
+}
+
 .breadcrumbs-item:first-child::after {
-  content: url("/231918-sedona-35/images/arrow.png");
-  margin-right: 10px;
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 23.8px;
+  background-image: url(/231918-sedona-35/images/arrow.png);
+  width: 10px;
+  height: 20px;
+  background-size: cover;
 }
 
 .catalog-filter {
@@ -965,13 +977,15 @@ span.information {
 
 .range-wrapper-inputs {
   width: 287px;
+  display: inline-flex;
+  flex-direction: row;
 }
 
 .range-scale {
   position: relative;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
-  margin-top: 41px;
+  margin-top: 42px;
 }
 
 .range-bar {
@@ -1012,13 +1026,13 @@ span.information {
 
 .range-input {
   box-sizing: border-box;
-  display: block;
-  width: 143px;
+  display: flex;
+  flex-direction: row;
+  width: 145px;
   background: #F2F2F2;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 20px;
-  font: inherit;
+  padding-left: 10px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1052,7 +1066,7 @@ range-input:active {
 }
 
 .range-wrapper-inputs::after {
-  position: absolute;
+  position: relative;
   content: "от";
   width: 20px;
   height: 24px;
@@ -1061,12 +1075,12 @@ range-input:active {
   line-height: 24px;
   color: #a9a9a9;
   background-color: transparent;
-  left: 106px;
-  top: 10px;
+  left: -180px;
+  top: 12px;
 }
 
 .range-wrapper-inputs::before {
-  position: absolute;
+  position: relative;
   content: "до";
   width: 20px;
   height: 24px;
@@ -1075,8 +1089,8 @@ range-input:active {
   line-height: 24px;
   color: #a9a9a9;
   background-color: transparent;
-  left: 246px;
-  top: 10px;
+  left: 260px;
+  top: 12px;
 }
 
 .catalog-filter-label {
@@ -1130,7 +1144,7 @@ range-input:active {
   opacity: 0.6;
 }
 
-.control-input:focus {
+.control-input:focus + .control-mark {
   outline: 2px solid #82B3D3;
 }
 
