@@ -68,6 +68,9 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  -webkit-box-shadow: 1px 1px 13px 3px rgba(20, 20, 20, 0.43);
+  -moz-box-shadow: 1px 1px 13px 3px rgba(20, 20, 20, 0.43);
+  box-shadow: 1px 1px 13px 3px rgba(20, 20, 20, 0.43);
 }
 
 .page-header {
@@ -132,7 +135,7 @@ body {
   position: absolute;
   left: 16px;
   right: 16px;
-  bottom: -5px;
+  bottom: -4px;
   height: 2px;
   width: auto;
   background-color: #756157;
@@ -387,7 +390,7 @@ li:not(:first-child):not(:last-child) .advantages-title::before {
 }
 
 .services-list .services-item:nth-child(1) {
-  background-image: url("./images/Advantage-icon.png");
+  background-image: url("./images/home.png");
   background-repeat: no-repeat;
   background-position: center top 80px;
 }
@@ -399,7 +402,7 @@ li:not(:first-child):not(:last-child) .advantages-title::before {
 }
 
 .services-list .services-item:nth-child(3) {
-  background-image: url("./images/Vector.svg");
+  background-image: url("./images/gift.svg");
   background-repeat: no-repeat;
   background-position: center top 80px;
 }
@@ -456,6 +459,8 @@ li:not(:first-child):not(:last-child) .advantages-title::before {
   background-repeat: no-repeat;
   width: 1200px;
   padding: 96px 258px 104px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .subscription-form {
@@ -982,6 +987,7 @@ span.information {
   width: 287px;
   display: inline-flex;
   flex-direction: row;
+  text-align: left;
 }
 
 .range-scale {
@@ -1102,9 +1108,10 @@ range-input:active {
 }
 
 .range-wrapper-inputs {
-  position: relative;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  align-self: auto;
 }
 
 .toggle-min {
@@ -1234,7 +1241,8 @@ range-input:active {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
+  text-align: left;
+  padding-left: 50px;
   text-transform: uppercase;
   background: none;
   border: 3px solid black;
