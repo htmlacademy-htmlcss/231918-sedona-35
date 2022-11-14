@@ -419,7 +419,7 @@ li:not(:first-child):not(:last-child) .advantages-title::before {
   box-sizing: border-box;
   text-align: center;
   background-color: #FFFFFF;
-  padding: 96px 304px;
+  padding: 96px 304px 91px 304px;
 }
 
 .involved-title {
@@ -465,7 +465,7 @@ li:not(:first-child):not(:last-child) .advantages-title::before {
   background-color: #a7d4f0;
   background-repeat: no-repeat;
   width: 1200px;
-  padding: 93px 258px 104px;
+  padding: 96px 258px 104px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1284,7 +1284,7 @@ range-input:active {
 
 .filter-results {
   background-color: #FFFFFF;
-  padding-bottom: 60px;
+  padding-bottom: 52px;
 }
 
 .sorting-container {
@@ -1550,7 +1550,7 @@ range-input:active {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1580,6 +1580,8 @@ range-input:active {
 .reduction {
   background-color: transparent;
   color: #000000;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .pagination-item .pagination-current {
@@ -1604,6 +1606,13 @@ range-input:active {
   background: #82B3D3;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.line {
+  box-sizing: border-box;
+  width: 1060px;
+  height: 40px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .subscription-button {
